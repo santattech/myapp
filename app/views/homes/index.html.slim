@@ -1,0 +1,13 @@
+h1 Santanu Rules!!!
+= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "push-right" if current_user
+
+- if current_user
+  | Hi,
+  = current_user.email
+  | , please update your profile.
+- else
+  = link_to "Sign Up", new_user_registration_path
+  </br>
+  = link_to "Sign In", new_user_session_path
+
+p This website is still under construction...
