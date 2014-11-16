@@ -1,5 +1,5 @@
 body {
-  background: #4A4A4A;
+  background: #E9EAED;
 }
 
 .alert {
@@ -22,4 +22,10 @@ body {
 
 a:hover {
 	text-decoration: underline;
+}
+
+.not-member, .member {
+  font-size: small;
+  text-align: center;
+  color: #3B5998;
 }

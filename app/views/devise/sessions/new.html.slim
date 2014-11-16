@@ -1,6 +1,7 @@
 #login
-  fieldset.clearfix
-    = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+  span.header SIGN IN
+  = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+    fieldset.clearfix
       p
         span.fontawesome-user
         = f.email_field :email, placeholder: "Username", required: true
