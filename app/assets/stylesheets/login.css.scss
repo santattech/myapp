@@ -13,12 +13,12 @@
 .clearfix:after { clear: both; }
 */
 
-div#login a {
-	color: #eee;
-	text-decoration: none;
+div#login a, div#registration a {
+  color: #3B5998;
+  text-decoration: none;
 }
 
-div#login {
+div#login, div#registration {
   width: 280px;
   margin: 65px auto;
 
@@ -26,12 +26,13 @@ div#login {
     border-color: #0000CC;
   }
 
-  .not-member {
-    font-size: small;
-    text-align: center;
-    color: #CED8AC;
+  span.header {
+    padding-left: 112px;
+    color: #44619D;
+    font-weight: bold;
+    text-transform: uppercase;
   }
-  
+
   form {
     span {
       text-align: center;
@@ -40,19 +41,19 @@ div#login {
       text-align: center;
       height: 40px;
       line-height: 45px;
-      background-color: #595855;
+      background-color: #72CEF9;
       width: 40px;
     }
 
     .field {
-      color: #CED8AC;
+      color: #4174CA;
       font-size: small;
     }
 
     input[type="submit"] {
-      background-color: #595855;
+      background-color: #40C3EC;
       border: medium none;
-      color: #D2DBB3;
+      color: #44619D;
       font-weight: bold;
       height: 40px;
       text-transform: uppercase;
