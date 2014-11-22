@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+gem 'bootstrap-sass', '3.2.0.0'
 gem 'devise'
 gem 'jquery-rails'
 gem 'pg'

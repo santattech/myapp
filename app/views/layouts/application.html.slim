@@ -6,7 +6,19 @@ html
     = javascript_include_tag "application"
     = csrf_meta_tags
   body
-    - flash.each do |k, v|
-      = content_tag :div, v, class: "flash #{k}"
-    
-    = yield
+    header class="navbar navbar-fixed-top navbar-inverse"
+      div.container
+        = link_to "my page", '#', id: "logo"
+        nav
+          ul.nav.navbar-nav.pull-right
+            li= link_to "Home", '#'
+            li= link_to "Help", '#'
+            - if current_user
+              li= link_to "Sign Out", destroy_user_session_path, method: :delete
+            - else
+              li= link_to "Sign In", new_user_session_path
+         
+    div.container
+      - flash.each do |k, v|
+        = content_tag :div, v, class: "flash #{k}"
+      = yield

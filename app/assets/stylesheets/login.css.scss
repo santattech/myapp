@@ -51,18 +51,16 @@ div#login, div#registration {
     }
 
     input[type="submit"] {
-      background-color: #40C3EC;
       border: medium none;
-      color: #44619D;
       font-weight: bold;
       height: 40px;
       text-transform: uppercase;
-      width: 280px;
+      width: 268px;
     }
 
     input[type="email"], input[type="password"] {
       width: 230px;
-      height: 32px;
+      height: 40px;
     }
   }  
 }

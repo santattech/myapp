@@ -1,11 +1,9 @@
 Myapp::Application.routes.draw do
   devise_for :users
 
-  devise_scope :user do
-    root to: "devise/sessions#new"
-  end
+  root :to => "homes#index"
 
-  resources :homes, only: [:index]
+  resources :users
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
