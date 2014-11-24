@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 
 gem 'bootstrap-sass', '3.2.0.0'
 gem 'devise'
+gem 'font-awesome-sass'
 gem 'jquery-rails'
 gem 'pg'
 gem 'rails', '3.2.13'

@@ -1,7 +1,7 @@
 Myapp::Application.routes.draw do
   devise_for :users
 
-  root :to => "homes#index"
+  root to: "homes#index"
 
   resources :users
   # The priority is based upon order of creation:

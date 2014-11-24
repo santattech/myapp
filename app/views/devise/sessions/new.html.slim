@@ -2,11 +2,13 @@
   span.header SIGN IN
   = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
       p
-        span.fontawesome-user
+        span
+          i.fa.fa-user
         = f.email_field :email, placeholder: "Email Address", required: true, class: "input-sm form-control"
 
       p
-        span.fontawesome-lock
+        span
+          i.fa.fa-lock
         = f.password_field :password, autocomplete: "off", placeholder: "Password", required: true, class: "input-sm form-control"
 
       - if devise_mapping.rememberable?
@@ -21,3 +23,4 @@
     | Not a member? &nbsp;
     = link_to "Sign up now ", new_user_registration_path
     span.fontawesome-arrow-right
+
