@@ -1,5 +1,17 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
 body {
-  background: #E9EAED;
+  background-color: #E8E8E7;
+  padding-top: 60px;
+}
+
+header {
+  
+    background-color: #01062B !important;
+ 
 }
 
 .alert {
@@ -12,10 +24,6 @@ body {
   font-color: #008000;
 }
 
-.push-right {
-  float: right;
-}
-
 .center-text {
   text-align: center;
 }
@@ -24,8 +32,16 @@ a:hover {
 	text-decoration: underline;
 }
 
+a {
+  text-decoration: none;
+}
+
 .not-member, .member {
   font-size: small;
   text-align: center;
   color: #3B5998;
+}
+
+.clear {
+  clear: both;     
 }
