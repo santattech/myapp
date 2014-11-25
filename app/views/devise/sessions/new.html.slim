@@ -17,10 +17,11 @@
           = f.label :remember_me
 
       p
-        = f.submit "Log in", class: "btn btn-primary btn-sm"
+        = f.submit "Sign in", class: "btn btn-primary btn-sm"
 
   p.not-member
     | Not a member? &nbsp;
     = link_to "Sign up now ", new_user_registration_path
-    span.fontawesome-arrow-right
+    span
+      i.fa.fa-arrow-right
 
