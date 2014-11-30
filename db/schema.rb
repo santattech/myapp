@@ -11,7 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20141104183448) do
+ActiveRecord::Schema.define(:version => 20141130141444) do
+
+  create_table "addresses", :force => true do |t|
+    t.string   "firstname"
+    t.string   "lastname"
+    t.text     "address1"
+    t.text     "address2"
+    t.string   "country"
+    t.string   "zip"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
@@ -26,9 +37,14 @@ ActiveRecord::Schema.define(:version => 20141104183448) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
+    t.string   "first_name"
+    t.string   "last_name"
+    t.integer  "address_id"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
+
+  add_foreign_key "users", "addresses", name: "users_address_id_fk", dependent: :nullify
 
 end

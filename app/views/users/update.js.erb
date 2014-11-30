@@ -1,0 +1,7 @@
+$('.error').html('');
+
+<% if @user.errors.any? %>
+  $('.error').html('<%= @user.errors.full_messages.to_sentence %>').addClass('alert');
+<% else %>
+  $('.error').html('Updated successfully.').addClass('notice');
+<% end %>

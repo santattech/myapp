@@ -1,8 +1,9 @@
 h2.center-text.clear Welcome to
 h3.center-text MY PAGE
 
-p 
-  | Hi, #{current_user.email}, please update your 
-  = link_to "profile", user_path(current_user)
- 
+p
+  | Hi, #{current_user.full_name}, please update your
+  | &nbsp;
+  = link_to "profile", edit_user_path(current_user)
+
 p This website is still under construction...
