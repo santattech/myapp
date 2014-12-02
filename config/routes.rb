@@ -4,6 +4,10 @@ Myapp::Application.routes.draw do
   root to: "homes#index"
 
   resources :users
+
+  get "/help" => "homes#help"
+  get "/about" => "homes#about"
+  get "/contact" => "homes#contact"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
