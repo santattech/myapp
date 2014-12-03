@@ -4,14 +4,23 @@
 @import "font-awesome";
 
 body {
-  background-color: #E8E8E7;
+  background-color: #EAEAEA;
   padding-top: 60px;
 }
 
+.container {
+  padding-top: 10px;
+}
+
 header {
-  
-    background-color: #01062B !important;
- 
+  background-color: #01062B !important;
+
+  #logo {
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+    height: 51px;
+    width: 138px;
+  }
 }
 
 .alert {
@@ -28,8 +37,16 @@ header {
   text-align: center;
 }
 
+.push-right {
+  float: right;
+}
+
+.push-left {
+  float: left;
+}
+
 a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 a {
@@ -43,5 +60,46 @@ a {
 }
 
 .clear {
-  clear: both;     
+  clear: both;
+}
+
+
+/* footer */
+
+footer {
+  bottom: 0;
+  color: #E6E6E6;
+  font-size: 13px;
+  height: 200px;
+  padding-top: 5px;
+  position: absolute;
+  width: 90%;
+
+  .shadow-top {
+    background-image: url("footerShadow.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    border-top: 1px solid #fff;
+    height: 14px;
+    margin-top: 50px;
+
+  }
+
+  a {
+    color: #c5c5c5;
+  }
+
+  a:hover {
+    color: #f1422d;
+  }
+
+  ul {
+    float: right;
+    list-style: none;
+  }
+
+  li {
+    float: left;
+    margin-left: 15px;
+  }
 }
