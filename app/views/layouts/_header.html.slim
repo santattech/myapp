@@ -1,9 +1,8 @@
 header class="navbar navbar-fixed-top navbar-inverse"
   div
-    = link_to "my page", root_path, id: "logo", class: "push-left"
+    = link_to "", root_path, id: "logo", class: "push-left"
     nav
       ul.nav.navbar-nav.pull-right
-        li= link_to "Home", '#'
         li= link_to "Help", help_path
 
         - if current_user

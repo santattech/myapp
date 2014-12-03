@@ -14,6 +14,13 @@ body {
 
 header {
   background-color: #01062B !important;
+
+  #logo {
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+    height: 51px;
+    width: 138px;
+  }
 }
 
 .alert {
@@ -60,17 +67,18 @@ a {
 /* footer */
 
 footer {
-
   bottom: 0;
   color: #E6E6E6;
   font-size: 13px;
+  height: 200px;
   padding-top: 5px;
+  position: absolute;
+  width: 90%;
 
   .shadow-top {
-    background-image: url("/assets/footerShadow.png");
+    background-image: url("footerShadow.png");
     background-position: center bottom;
     background-repeat: no-repeat;
-
     border-top: 1px solid #fff;
     height: 14px;
     margin-top: 50px;
