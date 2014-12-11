@@ -14,8 +14,18 @@ gem 'pg'
 gem 'rails', '3.2.13'
 gem 'slim-rails', '2.1.4'
 
-group :development do
+group :test, :development do
   gem 'pry-rails', '0.3.0'
+  gem 'rspec-rails', '2.13.2'
+end
+
+group :test do
+  gem 'capybara', '2.1'
+  gem 'database_cleaner', '1.0.1'
+  gem 'factory_girl_rails', '1.7.0'
+  gem 'ffaker', '1.12.1'
+  gem 'selenium-webdriver', '2.38.0'
+  gem 'shoulda-matchers', '2.1.0'
 end
 
 # Gems used only for assets and not required
